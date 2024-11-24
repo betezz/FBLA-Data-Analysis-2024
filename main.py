@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 import statsmodels as sm
-from data_cleaner import clean_data, save_cleaned_data, clean_data_main
+from scripts.data_cleaner import clean_data, save_cleaned_data, clean_data_main
 
 print(tf.__version__)
 
