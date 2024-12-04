@@ -93,7 +93,7 @@ def determine_season(month):
 # Extract month from a date column if available
 # For example, if 'start_date' is in the format YYYY-MM-DD
 
-'''
+
 # Now create the seasonal plots
 seasonal_figs, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
 
@@ -149,7 +149,7 @@ plt.figure(figsize=(10, 8))
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
 plt.title('Correlation between Different Boiler Emissions')
 plt.show()
-'''
+
 
 # Analyze trends over time
 def analyze_emission_trends(emission_type):
@@ -181,31 +181,6 @@ def generate_emission_statistics():
     
     return pd.DataFrame(stats_dict).round(2)
 
-'''
-
-print("\n=== Analyzing Boiler Emissions Impact on Air Quality ===\n")
-
-# 1. Generate and display statistical summary
-print("Statistical Summary of Emissions:")
-stats_df = generate_emission_statistics()
-print(stats_df)
-print("\n-----------------------------------\n")
-
-# 2. Run correlation analysis
-print("Analyzing correlations between different types of emissions...")
-plt.figure(figsize=(10, 8))
-sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
-plt.title('Correlation between Different Boiler Emissions')
-plt.tight_layout()
-plt.show()
-print("\n-----------------------------------\n")
-
-# 3. Analyze temporal trends for each emission type
-print("Analyzing emission trends over time...")
-for emission in ['SO2_Emissions', 'PM2_5_Emissions', 'NOx_Emissions']:
-    analyze_emission_trends(emission)
-print("\n-----------------------------------\n")
-print("\n-----------------------------------\n")
 
 # 5. Random Forest Model Results
 print("Random Forest Model Results:")
@@ -227,6 +202,7 @@ plt.tight_layout()
 plt.show()
 
 print("\n=== Analysis Complete ===")
+
 '''
 # PM2.5 Emissions vs PM2.5 Pollutant
 plt.figure(figsize=(6,4))
@@ -261,3 +237,4 @@ plt.show()
 
 
 
+'''
